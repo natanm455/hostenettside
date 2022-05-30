@@ -1,0 +1,67 @@
+<%- include('partials/header') %>
+    <%- include('partials/navbar') %>
+    <h1 id="headGuide">Nødvendig filbehandling</h1>
+        <img src="IMG\herokuLogo.png" class="logo" id="herokulogoCheck">
+
+        <div class="P1 P2">
+            <h1>Last ned Git</h1> <br>
+            <p> Du trenger Git for å kunne bruke heroku(CLI)
+            </p>
+            <h5>Nedlast det her: <a href="https://git-scm.com/downloads" target="_blank">Git Download</a>   <img src="IMG/gitLogo.png" style="height:120px; margin-left: 5%;"> </h5>
+        </div>
+
+        <div class="P1 P2">
+            <h1>Du må sette porten din på en dynamisk port.</h1>
+            
+            <div class="code codeLong">
+                <pre><code class="language-html">
+app.listen(process.env.PORT || 80, () => {
+    console.log("server running on port 80");
+});
+              </code></pre>
+            </div>
+            <div class="videoBox" id="videoBoxSpesiel">
+            <video id="my-video" class="video-js mp4" controls preload="auto" position="50" width="500" height="330"
+                poster="IMG/portLogo.png" data-setup="{}">
+                <source src="video/port.mp4" type="video/mp4" />
+                <p class="vjs-no-js">
+                    To view this video please enable JavaScript, and consider upgrading to a
+                    web browser that
+                    <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                </p>
+            </video></div>
+            <p></p>
+        </div>
+        <div class="P1 P2">
+            <h1>Dette må stå på package.json filen</h1>
+            <div class="code codeLong">
+                <pre><code class="language-html">
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+},
+"engines": {
+    "node": "16.15.0",
+    "npm": "8.5.5"
+}
+</code></pre>
+            </div>
+            <div class="videoBox">
+            <video id="my-video" class="video-js mp4" controls preload="auto" width="500" height="330"
+                poster="IMG/videoLogo.png" data-setup="{}">
+                <source src="video/json.mp4" type="video/mp4" />
+                <p class="vjs-no-js">
+                    To view this video please enable JavaScript, and consider upgrading to a
+                    web browser that
+                    <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                </p>
+            </video></div>
+          
+        </div>
+
+
+
+        <div class="P1 P2">
+            <h1>Gå videre til guiden --------> <a href="./guide">  <img src="IMG/herukoLL.png" style="margin-left: 10%;"></a></h1> <br>
+        </div>
+        <%- include('partials/footer') %>

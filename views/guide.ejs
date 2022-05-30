@@ -1,0 +1,61 @@
+<%- include('partials/header') %>
+    <%- include('partials/navbar') %>
+    <h1 id="headGuide">Hosting Guide</h1>
+    <img src="IMG\herokuLogo.png" class="logo" id="herokulogoGuide"> <br>
+
+        <div class="P1 P2">
+            <h1>Last ned Heroku</h1> <br>
+            <p>Først så trenger du å lage deg en heroku bruker (Heroku.com).
+                Deretter laster du ned Heroku (CLI).<br>
+                Du kommer til å trenge det for å administrere og skalere applikasjonene dine. </p>
+            <h5>Nedlast det her: <a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs?singlepage=true" target="_blank">Heroku(CLI) </a> </h5>
+            <p>sjekk om du har fått lastet ned riktig versjon.</p>
+            <div class="code">
+                <pre><code class="language-html">$ heroku --version</code></pre>
+            </div>
+        </div>
+
+        <div class="P1 P2">
+            <h1>logg inn på Heroku</h1> <br>
+            <p>Nå trenger du å logge deg inn på heroku gjennom Git Bash.</p>
+            <div class="code">
+                <pre><code class="language-html">$ heroku login</code></pre>
+            </div>
+        </div>
+
+        <div class="P1 P2">
+            <h1>Gjør klar filer</h1> <br>
+            <p>Finn fram eller hent applikasjonen/nettsiden din.</p>
+            <div class="code">
+                <pre><code class="language-html">$ git clone https://github.com/DittBrukernavn/nettsidenDin.git</code></pre>
+            </div>
+            <div class="code">
+                <pre><code class="language-html">$ cd nettsidenDin</code></pre>
+            </div>
+        </div>
+
+        <div class="P1 P2">
+            <h1>Gjør heroku klar for å ta imot filene dine</h1> <br>
+            <p>Gjennomfør denne kommandoen for å gjøre heroku klar for å ta imot filene dine</p>
+            <div class="code">
+                <pre><code class="language-html">$ heroku create</code></pre>
+            </div>
+            <p>Nå gjelder det bare å gjøre applikasjonen/nettsiden din offentlig</p>
+            <div class="code">
+                <pre><code class="language-html">$ git push heroku master</code></pre>
+            </div>
+        </div>
+
+        <div class="P1 P2">
+            <h1>Bekreft at Applikasjonen/nettsiden kjører</h1> <br>
+            <div class="code">
+                <pre><code class="language-html">$ heroku ps:scale web=1</code></pre>
+            </div>
+            <p>Prøv å besøk nettsiden din</p>
+            <div class="code">
+                <pre><code class="language-html">$ heroku open</code></pre>
+            </div>
+        </div>
+
+
+        <%- include('partials/footer') %>
