@@ -1,0 +1,288 @@
+body {
+  background-color: #1a1a40;
+  color: #ffffff;
+}
+
+h5{
+  margin: 40px 20px 20px 30px;
+}
+
+h1{
+  color:#1a1a40;
+}
+
+.txt {
+  display: inline-block;
+}
+
+.code {
+  background-color: #0a3947;
+  color: #ddd7d7;
+  width: 60%;
+  height: 38px;
+  border-radius: 5px;
+  padding: 6px;
+  margin: 40px 20px 20px 30px;
+}
+
+.codeLong {
+  position: relative;
+  height: auto;
+  text-align: left;
+  display: inline-block;
+}
+
+.mainNavbar {
+  background-color: #7B113A;
+}
+
+.logo {
+  position: relative;
+  margin: 30px;
+  height: 150px;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(152deg)
+    brightness(105%) contrast(105%);
+  margin-top: -15%;
+}
+
+.screen {
+  width: 37%;
+  height: 470px;
+  padding: 25px;
+}
+
+.mp4 {
+  padding: 5%;
+}
+.videoBox{
+  position: relative;
+  width: 35%;
+  height: 250%;
+  background-color: #0a3947;
+  display: inline-block;
+  border-radius: 20px;
+  margin-top: 1%;
+  top: 22%;
+  left: 1%;
+}
+
+#videoBoxSpesiel {
+  position: relative;
+  bottom: -45px !important;
+}
+.video-js{
+  margin: auto !important;
+    margin-top: 5% !important;
+    margin: auto !important;
+    margin-top: 5% !important;
+    margin-bottom: 5% !important;
+    width: 100%;
+    height: 220px;
+    border: #2c2c2c 1px solid  ;
+    border-radius: 5px;
+}
+
+.vjs-big-play-button{
+  top: 25 !important;
+  left: 25 !important;
+}
+
+.herokulogo {
+  margin: 3%;
+  left: 30%;
+}
+
+#herokulogoCheck {
+  margin: 3%;
+  left: 11%;
+}
+
+#herokulogoGuide {
+  margin: 3%;
+  left: 20%;
+}
+
+.header1 {
+  margin: 60px 20px 110px 20px;
+  text-align: center;
+  font-size: 80px;
+}
+
+#head {
+  color: #ffffff;
+  font-size: 450%;
+}
+
+#headGuide {
+  color: #ffffff;
+  font-size: 430%;
+  display: inline-block;
+  margin-left: 15%;
+}
+
+
+.P1 {
+  position: relative;
+  left: 22%;
+  background-color: #ddd7d7;
+  color: #1a1a40;
+  padding: 35px;
+  width: 28%;
+  border-radius: 5px;
+  margin: 40px 20px 20px 30px;
+  display: inline-block;
+  overflow: hidden;
+  font-size: 20px;
+}
+
+.Pguide {
+  flex: auto;
+  background-color: #ddd7d7;
+  color: #1a1a40;
+  padding: 25px;
+  width: 70%;
+  border-radius: 5px;
+  margin: 40px 25px;
+  display: block;
+  overflow: hidden;
+  font-size: 20px;
+}
+
+.P2 {
+  left: 14%;
+  width: 70%;
+}
+
+.Pright {
+  left: 53%;
+  margin-top: 5%;
+}
+
+.link {
+margin: 5%;
+}
+
+.Plink{
+  width: 30%;
+}
+
+.HerokuIMG{
+  width: 80%;
+  margin: 30.5% 30.5% 30.5% 15%;
+  left: 15px;
+}
+
+.imgRight {
+  left: 30%;
+  margin-top: -20%;
+}
+
+.imgLeft {
+  left: -3%;
+  height: 120px;
+  margin-top: -7.1%;
+}
+
+.heroku-buttons {
+  display: flex;
+  flex-direction: row;
+  width: 50vw;
+  margin: 0 auto;
+}
+
+.github-guide {
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+  margin: 0 auto;
+}
+
+.github-guide .Pguide {
+  width: 100%;
+}
+
+.index-cards {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.index-card {
+  flex: auto;
+}
+
+@media (max-width: 2225px) {
+  .Pguide{
+    width: 45%;
+  }
+  .leftScreen {
+    width: 25%;
+    height: 470px;
+    padding: 25px;
+    margin-top: 25%;
+  }
+
+}
+
+@media (max-width: 1766px) {
+  .imgRight {
+    margin-top: -16%;
+  }
+  .imgLeft {
+    left: -22%;
+    margin-top: -15.1%;
+  }
+  .P1 {
+    width: 39%;
+    left: 15%;
+  }
+  .P2 {
+    left: 14%;
+    width: 70%;
+  }
+  .Pright {
+    left: 53%;
+    margin-top: 5%;
+  }
+}
+
+@media (max-width: 1420px) {
+  .imgRight {
+    margin-left: -8%;
+  }
+  .imgLeft {
+    left: -26%;
+    margin-top: -20%;
+  }
+  .P2 {
+    left: 14%;
+    width: 70%;
+  }
+  .txt {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 1126px) {
+  .imgRight {
+    margin-top: -30%;
+  }
+  .imgLeft {
+    left: -36%;
+    margin-top: -30%;
+  }
+  .P2 {
+    left: 14%;
+    width: 70%;
+  }
+  .txt {
+    display: inline-block;
+  }
+  .heroku-buttons {
+    flex-direction: column;
+  }
+  .Pguide {
+    margin: 10px auto;
+  }
+}
